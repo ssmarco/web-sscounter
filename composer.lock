@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8754772418467427a726a9a7b6941cc7",
+    "content-hash": "3d08c396d1f8a6b4955673ccdb8be47d",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -1558,6 +1558,64 @@
             "notification-url": "https://packagist.org/downloads/",
             "description": "GraphQL server for SilverStripe models and other data",
             "time": "2018-01-23T21:39:01+00:00"
+        },
+        {
+            "name": "silverstripe/marcz-sscounter",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/marczhermo/silverstripe-sscounter.git",
+                "reference": "3e18842ef86f0b332ab486c61b4bace555d12e0d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/marczhermo/silverstripe-sscounter/zipball/3e18842ef86f0b332ab486c61b4bace555d12e0d",
+                "reference": "3e18842ef86f0b332ab486c61b4bace555d12e0d",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/admin": "^1@dev",
+                "silverstripe/framework": "^4@dev",
+                "silverstripe/vendor-plugin": "^1.0",
+                "silverstripe/versioned": "^1@dev"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7",
+                "silverstripe/cms": "^4@dev"
+            },
+            "type": "silverstripe-vendormodule",
+            "extra": {
+                "expose": [
+                    "client/dist",
+                    "client/lang"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "Marcz\\SSCounter\\": "code/",
+                    "Marcz\\SSCounter\\Tests\\": "tests/php/"
+                }
+            },
+            "scripts": {
+                "lint": [
+                    "phpcs src/ tests/php/ tests/behat/src/"
+                ]
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "sscounter field",
+            "keywords": [
+                "admin",
+                "form",
+                "silverstripe",
+                "versioned"
+            ],
+            "support": {
+                "source": "https://github.com/marczhermo/silverstripe-sscounter/tree/episode2",
+                "issues": "https://github.com/marczhermo/silverstripe-sscounter/issues"
+            },
+            "time": "2018-02-01T10:45:25+00:00"
         },
         {
             "name": "silverstripe/recipe-cms",
@@ -3728,7 +3786,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "silverstripe/recipe-cms": 0
+        "silverstripe/recipe-cms": 0,
+        "silverstripe/marcz-sscounter": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
